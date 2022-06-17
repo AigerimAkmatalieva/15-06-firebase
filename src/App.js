@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import Counter from "./components/Counter";
 
 
 function App() {
@@ -7,9 +8,7 @@ function App() {
 
   return (  
     <div className="App">
-     <h1>0</h1>
-     <button onClick={() => dispatch(increment())}>+</button>
-     <button onClick={() => dispatch(decrement())}>-</button>
+     <Counter/>
     </div>
   );
 }
